@@ -1,41 +1,43 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1>EduQuest</h1>
+      <h1>
+        <NavLink to="/" className="my-link">
+          EduQuest
+        </NavLink>
+      </h1>
       <ul className="nav-menu">
         <li>
-          <Link style={{ textDecoration: "none" }} to="/">
+          <NavLink to="/" className="my-link">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          {" "}
-          <Link style={{ textDecoration: "none" }} to="/skills">
+          <NavLink to="/skills" className="my-link">
             Skills
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link style={{ textDecoration: "none" }} to="/online-courses">
-            {" "}
+          <NavLink to="/online-courses" className="my-link">
             Online Courses
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link style={{ textDecoration: "none" }} to="/internship-tracker">
+          <NavLink to="/internship-tracker" className="my-link">
             Internship Tracker
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="nav-login">
         <button>
-          {" "}
-          <Link style={{ textDecoration: "none" }} to="/login">
+          <NavLink to="/login" className="my-link">
             Login
-          </Link>
+          </NavLink>
         </button>
       </div>
     </div>

@@ -25,6 +25,26 @@
   cursor: pointer;
 }
 
+/* List item styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+/* Link styles */
+.my-link {
+  color: rgb(49, 47, 47);
+  text-decoration: none;
+}
+
+.my-link.active {
+  color: rgb(49, 47, 47); /* set the active link color to your desired color */
+}
+
 .nav-menu hr {
   border: none;
   width: 80%;
