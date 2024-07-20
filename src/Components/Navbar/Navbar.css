@@ -12,7 +12,7 @@
   gap: 50px;
   list-style: none;
   color: rgb(49, 47, 47);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -36,7 +36,8 @@ nav li {
 }
 
 /* Link styles */
-.my-link {
+.my-link,
+.my-link-login {
   color: rgb(49, 47, 47);
   text-decoration: none;
 }
@@ -66,9 +67,8 @@ nav li {
   border: 1px solid #7a7a7a;
   border-radius: 40px;
   color: rgb(49, 47, 47);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  background: rgb(197, 208, 216);
   cursor: pointer;
 }
 
