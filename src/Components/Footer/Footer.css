@@ -1,0 +1,22 @@
+.footer {
+  background: rgb(187, 246, 246);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-para {
+  font-size: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons-container {
+  padding-right: 20px;
+  font-size: 27px;
+  margin-top: 30px;
+  text-decoration: none;
+}

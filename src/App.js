@@ -6,12 +6,14 @@ import OnlineCourses from "./Components/Pages/OnlineCourses";
 import InternshipTracker from "./Components/Pages/InternshipTracker";
 import Home from "./Components/Pages/Home";
 import Login from "./Components/Pages/Login";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <Navbar />
+
         <Routes>
           <Route path="/skills" element={<Skills />} />
           <Route path="/online-courses" element={<OnlineCourses />} />
@@ -19,8 +21,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+      <Footer />
+    </div>
   );
 }
 
